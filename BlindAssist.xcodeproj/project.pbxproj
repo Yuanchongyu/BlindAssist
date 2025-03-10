@@ -11,6 +11,11 @@
 		E96B8AD12D7ED42600307EF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B8AD02D7ED42600307EF4 /* ContentView.swift */; };
 		E96B8AD32D7ED42C00307EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96B8AD22D7ED42C00307EF4 /* Assets.xcassets */; };
 		E96B8AD62D7ED42C00307EF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96B8AD52D7ED42C00307EF4 /* Preview Assets.xcassets */; };
+		E96B8AE02D7EDB2200307EF4 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B8ADF2D7EDB2200307EF4 /* CameraViewModel.swift */; };
+		E96B8AE42D7EDB5A00307EF4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B8AE32D7EDB5A00307EF4 /* NetworkManager.swift */; };
+		E96B8AE62D7EDB6A00307EF4 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B8AE52D7EDB6A00307EF4 /* SpeechService.swift */; };
+		E96B8AE92D7EDB9900307EF4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E96B8AE82D7EDB9900307EF4 /* Info.plist */; };
+		E96B8AEB2D7EDC0300307EF4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E96B8AEA2D7EDC0300307EF4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		E96B8AD02D7ED42600307EF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E96B8AD22D7ED42C00307EF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E96B8AD52D7ED42C00307EF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E96B8ADF2D7EDB2200307EF4 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		E96B8AE32D7EDB5A00307EF4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E96B8AE52D7EDB6A00307EF4 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		E96B8AE82D7EDB9900307EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96B8AEA2D7EDC0300307EF4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,7 @@
 		E96B8AC22D7ED42600307EF4 = {
 			isa = PBXGroup;
 			children = (
+				E96B8AEA2D7EDC0300307EF4 /* README.md */,
 				E96B8ACD2D7ED42600307EF4 /* BlindAssist */,
 				E96B8ACC2D7ED42600307EF4 /* Products */,
 			);
@@ -51,10 +62,13 @@
 		E96B8ACD2D7ED42600307EF4 /* BlindAssist */ = {
 			isa = PBXGroup;
 			children = (
-				E96B8ACE2D7ED42600307EF4 /* BlindAssistApp.swift */,
-				E96B8AD02D7ED42600307EF4 /* ContentView.swift */,
-				E96B8AD22D7ED42C00307EF4 /* Assets.xcassets */,
+				E96B8AE72D7EDB7800307EF4 /* Resources */,
+				E96B8AE12D7EDB3B00307EF4 /* Services */,
+				E96B8ADE2D7EDB0700307EF4 /* ViewModels */,
+				E96B8ADD2D7EDAE300307EF4 /* Views */,
+				E96B8ADC2D7EDAB900307EF4 /* App */,
 				E96B8AD42D7ED42C00307EF4 /* Preview Content */,
+				E96B8AE82D7EDB9900307EF4 /* Info.plist */,
 			);
 			path = BlindAssist;
 			sourceTree = "<group>";
@@ -65,6 +79,47 @@
 				E96B8AD52D7ED42C00307EF4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E96B8ADC2D7EDAB900307EF4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E96B8ACE2D7ED42600307EF4 /* BlindAssistApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E96B8ADD2D7EDAE300307EF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E96B8AD02D7ED42600307EF4 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E96B8ADE2D7EDB0700307EF4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E96B8ADF2D7EDB2200307EF4 /* CameraViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E96B8AE12D7EDB3B00307EF4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E96B8AE32D7EDB5A00307EF4 /* NetworkManager.swift */,
+				E96B8AE52D7EDB6A00307EF4 /* SpeechService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E96B8AE72D7EDB7800307EF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E96B8AD22D7ED42C00307EF4 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +182,8 @@
 			files = (
 				E96B8AD62D7ED42C00307EF4 /* Preview Assets.xcassets in Resources */,
 				E96B8AD32D7ED42C00307EF4 /* Assets.xcassets in Resources */,
+				E96B8AEB2D7EDC0300307EF4 /* README.md in Resources */,
+				E96B8AE92D7EDB9900307EF4 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96B8AE42D7EDB5A00307EF4 /* NetworkManager.swift in Sources */,
 				E96B8AD12D7ED42600307EF4 /* ContentView.swift in Sources */,
+				E96B8AE62D7EDB6A00307EF4 /* SpeechService.swift in Sources */,
+				E96B8AE02D7EDB2200307EF4 /* CameraViewModel.swift in Sources */,
 				E96B8ACF2D7ED42600307EF4 /* BlindAssistApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
